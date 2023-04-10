@@ -1,6 +1,5 @@
-import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+import { prisma } from "../../server/db/client"
 
 export default async function handle(req, res) {
   const { method } = req;
